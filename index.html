@@ -1,39 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>流星雨3D旋转相册</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
+relative
+<<!DOCTYPE html> 语言=“恩”>
+  <头>
+    <自指的 字符集=“UTF八号”" />
+    <标题>流星雨三维（three dimension的缩写）旋转相册</标题>
+    <环 能量损耗率="样式表" href=" style.css " />
+    <风格>
       * {
-        margin: 0;
-        padding: 0;
+        边缘: 0;
+        填料: 0;
       }
-      html,
-      body {
-        height: 100%;
+      超文本标记语言,
+      身体 {
+        高度: 100%;
       }
-      body {
-        display: flex;
-        perspective: 1000px;
-        transform-style: preserve-3d;
+      身体 {
+        显示: 弯曲;
+        远景: 1000像素;
+        转换样式: 保留-3d;
         /* background-image: url(./img/3.png); */
-        background: #0c0c0c;
-        height: 100%;
-        width: 100%;
+        背景:# 0 c 0 c 0 c；
+        高度: 100%;
+        宽度: 100%;
       }
-      #box {
-        z-index: 9999;
-        position: relative;
+      #箱子 {
+        z指数: 9999;
+        位置: 亲戚;
         display: flex;
         width: 130px;
         height: 200px;
-        margin: auto;
         transform-style: preserve-3d;
-        transform: rotateX(-10deg);
+变换样式:保留-3d；
+transform:rotateX(-10度)；
       }
-      #box > div {
-        transform-style: preserve-3d;
+#box > div
+变换样式:保留-3d；
         position: absolute;
         left: 0;
         top: 0;
@@ -175,6 +175,7 @@
                 aDiv = obox.getElementsByTagName("div");
 
         // 在这里添加你的图床图片链接
+        /*
         var imgUrls = [
           "https://pic1.imgdb.cn/item/6788fb85d0e0a243d4f4e5d7.jpg",
           "https://pic1.imgdb.cn/item/6788fba6d0e0a243d4f4e5e2.jpg",
@@ -187,6 +188,8 @@
           "https://pic1.imgdb.cn/item/6788fb1dd0e0a243d4f4e5bf.jpg",
           "https://pic1.imgdb.cn/item/6788fb28d0e0a243d4f4e5c1.jpg"
         ];
+*/
+
 
         for (var i = 0; i < aDiv.length; i++) {
           aDiv[i].style.background = "url(" + imgUrls[i] + ") center/cover";
