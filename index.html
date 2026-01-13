@@ -1,103 +1,103 @@
-relative
-<<!DOCTYPE html> 语言=“恩”>
-  <头>
-    <自指的 字符集=“UTF八号”" />
-    <标题>流星雨三维（three dimension的缩写）旋转相册</标题>
-    <环 能量损耗率="样式表" href=" style.css " />
-    <风格>
-      * {
-        边缘: 0;
-        填料: 0;
-      }
-      超文本标记语言,
-      身体 {
-        高度: 100%;
-      }
-      身体 {
-        显示: 弯曲;
-        远景: 1000像素;
-        转换样式: 保留-3d;
-        /* background-image: url(./img/3.png); */
-        背景:# 0 c 0 c 0 c；
-        高度: 100%;
-        宽度: 100%;
-      }
-      #箱子 {
-        z指数: 9999;
-        位置: 亲戚;
-        display: flex;
-        width: 130px;
-        height: 200px;
-        transform-style: preserve-3d;
-变换样式:保留-3d；
-transform:rotateX(-10度)；
-      }
-#box > div
-变换样式:保留-3d；
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        line-height: 200px;
-        font-size: 50px;
-        text-align: center;
-        box-shadow: 0 0 10px #fff;
-        -webkit-box-reflect: below 10px -webkit-linear-gradient(top, rgba(
-                0,
-                0,
-                0,
-                0
-        )
-        40%, rgba(0, 0, 0, 0.8) 100%);
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>流星雨3D旋转相册</title>
+  <link rel="stylesheet" href="http://sq6hi6f5c.hn-bkt.clouddn.com/style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      /* background-image: url(./img/3.png); */
+      background: #0c0c0c;
+      height: 100%;
+      width: 100%;
+    }
+    #box {
+      z-index: 9999;
+      position: relative;
+      display: flex;
+      width: 130px;
+      height: 200px;
+      margin: auto;
+      transform-style: preserve-3d;
+      transform: rotateX(-10deg);
+    }
+    #box > div {
+      transform-style: preserve-3d;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 200px;
+      font-size: 50px;
+      text-align: center;
+      box-shadow: 0 0 10px #fff;
+      -webkit-box-reflect: below 10px -webkit-linear-gradient(top, rgba(
+              0,
+              0,
+              0,
+              0
+      )
+      40%, rgba(0, 0, 0, 0.8) 100%);
+    }
 
-      #box p {
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        width: 1200px;
-        height: 1200px;
-        background: -webkit-radial-gradient(
-                center center,
-                600px 600px,
-                rgba(50, 50, 50, 1),
-                rgba(0, 0, 0, 0)
-        );
-        border-radius: 50%;
-        transform: rotateX(90deg) translate3d(-600px, 0, -105px);
-      }
-      /* 下雨特效 */
-      #codepen-link {
-        position: absolute;
-        bottom: 30px;
-        right: 30px;
-        height: 40px;
-        width: 40px;
-        z-index: 10;
-        border-radius: 50%;
-        box-sizing: border-box;
-        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/logo.jpg");
-        background-position: center center;
-        background-size: cover;
-        opacity: 0.5;
-        -webkit-transition: all 0.25s;
-        transition: all 0.25s;
-      }
+    #box p {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 1200px;
+      height: 1200px;
+      background: -webkit-radial-gradient(
+              center center,
+              600px 600px,
+              rgba(50, 50, 50, 1),
+              rgba(0, 0, 0, 0)
+      );
+      border-radius: 50%;
+      transform: rotateX(90deg) translate3d(-600px, 0, -105px);
+    }
+    /* 下雨特效 */
+    #codepen-link {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      height: 40px;
+      width: 40px;
+      z-index: 10;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/logo.jpg");
+      background-position: center center;
+      background-size: cover;
+      opacity: 0.5;
+      -webkit-transition: all 0.25s;
+      transition: all 0.25s;
+    }
 
-      #codepen-link:hover {
-        opacity: 0.8;
-        box-shadow: 0 0 6px #efefef;
-      }
-    </style>
-  </head>
-  <body>
-    <button id="playMusic">播放音乐</button>
-    <audio id="backgroundMusic" src="renxi.mp3" type="audio/mp3" muted autoplay></audio>
-    <!-- 相册 -->
+    #codepen-link:hover {
+      opacity: 0.8;
+      box-shadow: 0 0 6px #efefef;
+    }
+  </style>
+</head>
+<body>
+<button id="playMusic">播放音乐</button>
+<audio id="backgroundMusic" src="http://sq6hi6f5c.hn-bkt.clouddn.com/renxi.mp3" type="audio/mp3" muted autoplay></audio>
+<!-- 相册 -->
     <div id="box">
       <div></div>
       <div></div>
